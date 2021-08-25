@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Register.css" />
+    <title>Register</title>
+  </head>
+  <body style="background-color: grey;">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">
+          <img
+            src="logo.png"
+            alt=""
+            width="70px"
+            height="50px"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </nav>
+    <div class="container shadow">
+      <form method="POST" action="Register.php" enctype="multipart/form-data">
+        <div class="row">
+          <center>
+            <div class="column">
+              <label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  height="100"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                  /></svg
+              ></label>
+            </div>
+          </center>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              required
+              id="firstName"
+              name="firstName"
+              type="text"
+              class="form-control register_items"
+              placeholder="First Name"
+            />
+          </div>
+
+          <div class="col">
+            <input
+              type="text"
+              required
+              class="form-control register_items"
+              id="middleName"
+              name="middleName"
+              placeholder="Middle Name"
+            />
+          </div>
+          <div class="col">
+            <input
+              required
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form-control register_items"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              required
+              type="email"
+              id="email"
+              name="email"
+              class="form-control register_items"
+              placeholder="Email"
+            />
+          </div>
+          <div class="col">
+            <input
+              required
+              id="DOB"
+              name="DOB"
+              type="date"
+              class="form-control register_items"
+              placeholder="D.O.B"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              id="username"
+              name="username"
+              required
+              type="text"
+              class="form-control register_items"
+              placeholder="username"
+            />
+          </div>
+          <div class="col">
+            <input
+              required
+              name="password"
+              id="password"
+              type="password"
+              class="form-control register_items"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <center>
+            <div class="col register_items">
+              <select id="role" name="role">
+                <option selected>
+                  Teacher
+                </option>
+                <option>Student</option>
+              </select>
+            </div>
+          </center>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              type="submit"
+              style="width: 100%;"
+              class="btn btn-primary from-control"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="reset"
+              style="width: 100%;"
+              class="btn btn-danger from-control"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

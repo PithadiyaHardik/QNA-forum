@@ -1,0 +1,27 @@
+.container{
+    display:flex;
+    justify-content:center;
+    width:50vw;
+    background-color: white;
+    border-radius: 10px;
+     align-items: center;
+    position:relative;
+    top:20vh;
+    padding:20px;
+}
+
+
+.register_items{
+    margin:8px;
+}
+
+.profile_pic{
+    position:relative;
+    left:20vw;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width:80vw
+    }
+}

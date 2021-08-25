@@ -1,0 +1,22 @@
+.container{
+    display:flex;
+    justify-content:center;
+    background-color: white;
+    border-radius: 3vh;
+    position:relative;
+    top:20vh;
+    padding:20px
+}
+.login{
+    width:25vw;
+}
+
+.login_items{
+    margin:8px;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width:50vw
+    }
+}
